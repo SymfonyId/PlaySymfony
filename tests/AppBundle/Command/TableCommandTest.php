@@ -6,6 +6,9 @@ use AppBundle\Command\TableCommand;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Tester\CommandTester;
 
+/**
+ * Check: http://symfony.com/doc/current/components/console/introduction.html#testing-commands
+ */
 class TableCommandTest extends \PHPUnit_Framework_TestCase
 {
     public function testCreateTableWithProgressBar()
@@ -18,7 +21,7 @@ class TableCommandTest extends \PHPUnit_Framework_TestCase
         $tester = new CommandTester($command);
 
         $tester->execute(array(
-            'command'      => $command->getName(),
+            'command' => $command->getName(),
         ));
 
         $displayOutput = $tester->getDisplay();
