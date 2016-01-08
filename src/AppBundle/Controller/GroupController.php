@@ -27,7 +27,7 @@ class GroupController extends Controller
 
         $groups = $em->getRepository('AppBundle:Group')->findAll();
 
-        return $this->render('group/index.html.twig', array(
+        return $this->render('AppBundle:group:index.html.twig', array(
             'groups' => $groups,
         ));
     }
@@ -52,7 +52,7 @@ class GroupController extends Controller
             return $this->redirectToRoute('group_show', array('id' => $group->getId()));
         }
 
-        return $this->render('group/new.html.twig', array(
+        return $this->render('AppBundle:group:new.html.twig', array(
             'group' => $group,
             'form' => $form->createView(),
         ));
@@ -68,7 +68,7 @@ class GroupController extends Controller
     {
         $deleteForm = $this->createDeleteForm($group);
 
-        return $this->render('group/show.html.twig', array(
+        return $this->render('AppBundle:group:show.html.twig', array(
             'group' => $group,
             'delete_form' => $deleteForm->createView(),
         ));
@@ -94,7 +94,7 @@ class GroupController extends Controller
             return $this->redirectToRoute('group_edit', array('id' => $group->getId()));
         }
 
-        return $this->render('group/edit.html.twig', array(
+        return $this->render('AppBundle:group:edit.html.twig', array(
             'group' => $group,
             'edit_form' => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
