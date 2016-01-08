@@ -5,7 +5,7 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Table(name="contact")
+ * @ORM\Table(name="pl_contact")
  * @ORM\Entity
  */
 class Contact
@@ -29,12 +29,12 @@ class Contact
     private $fullName;
 
     /**
-     * @ORM\Column(name="name", type="string", length=77)
+     * @ORM\Column(name="email", type="string", length=77)
      */
     private $email;
 
     /**
-     * @ORM\Column(name="name", type="string", length=17)
+     * @ORM\Column(name="phone_number", type="string", length=17)
      */
     private $phoneNumber;
 

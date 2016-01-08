@@ -5,7 +5,7 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Table(name="group")
+ * @ORM\Table(name="pl_group")
  * @ORM\Entity
  */
 class Group
@@ -22,18 +22,32 @@ class Group
      */
     private $name;
 
+    /**
+     * @return integer
+     */
     public function getId()
     {
         return $this->id;
     }
 
+    /**
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param string $name
+     */
     public function setName($name)
     {
         $this->name = $name;
     }
 
-    public function getName()
+    public function __toString()
     {
-        return $this->name;
+        return $this->getName();
     }
 }
