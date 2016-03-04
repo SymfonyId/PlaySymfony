@@ -5,6 +5,7 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use JMS\Serializer\Annotation as Serializer;
 use Hateoas\Configuration\Annotation as Hateoas;
+use Symfonian\Indonesia\CoreBundle\Toolkit\DoctrineManager\Model\EntityInterface;
 
 /**
  * @ORM\Table(name="pl_group")
@@ -13,7 +14,7 @@ use Hateoas\Configuration\Annotation as Hateoas;
  * @Serializer\XmlRoot("group")
  * @Hateoas\Relation("self", href = "expr('/api/groups/' ~ object.getId())")
  */
-class Group
+class Group implements EntityInterface
 {
     /**
      * @ORM\Column(name="id", type="integer", nullable=false)

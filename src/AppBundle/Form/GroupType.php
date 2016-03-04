@@ -26,6 +26,7 @@ class GroupType extends AbstractType
     {
         $resolver->setDefaults(array(
             'data_class' => 'AppBundle\Entity\Group',
+            'csrf_protection' => false,
         ));
     }
 }

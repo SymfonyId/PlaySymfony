@@ -69,5 +69,11 @@ swiftmailer:
     spool:     { type: memory }
 
 fos_rest:
+    format_listener:
+        enabled: true
+        rules:
+            - { path: '^/', priorities: ['json', 'xml'], fallback_format: 'html' }
+    routing_loader:
+        default_format: json
     view:
         view_response_listener: 'force'

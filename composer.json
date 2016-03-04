@@ -30,7 +30,10 @@
         "willdurand/hateoas-bundle": "dev-master",
         "jms/serializer-bundle": "dev-master",
         "friendsofsymfony/rest-bundle": "dev-master",
-        "pagerfanta/pagerfanta": "dev-master"
+        "pagerfanta/pagerfanta": "dev-master",
+        "symfonyid/core-bundle": "dev-master",
+        "symfonyid/symfony-bundle-plugins": "dev-master",
+        "symfonyid/rehat-bundle": "dev-master"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",

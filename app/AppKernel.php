@@ -18,6 +18,8 @@ class AppKernel extends Kernel
             new JMS\SerializerBundle\JMSSerializerBundle(),
             new FOS\RestBundle\FOSRestBundle(),
             new Bazinga\Bundle\HateoasBundle\BazingaHateoasBundle(),
+//            new Symfonian\Indonesia\CoreBundle\SymfonianIndonesiaCoreBundle(),
+            new Symfonian\Indonesia\RehatBundle\SymfonianIndonesiaRehatBundle(),
             new AppBundle\AppBundle(),
         ];
 
