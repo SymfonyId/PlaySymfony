@@ -77,3 +77,5 @@ fos_rest:
         default_format: json
     view:
         view_response_listener: 'force'
+    serializer:
+        serialize_null: true

@@ -779,12 +779,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "0206c4205696be71b2a484d81ff273e82ce122f7"
+                "reference": "e90e98afa45f8dd0d893e7cd4f07b31cc92325eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/0206c4205696be71b2a484d81ff273e82ce122f7",
-                "reference": "0206c4205696be71b2a484d81ff273e82ce122f7",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/e90e98afa45f8dd0d893e7cd4f07b31cc92325eb",
+                "reference": "e90e98afa45f8dd0d893e7cd4f07b31cc92325eb",
                 "shasum": ""
             },
             "require": {
@@ -855,7 +855,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2016-03-03 16:30:43"
+            "time": "2016-03-04 12:49:38"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -2633,12 +2633,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/RehatBundle.git",
-                "reference": "ad3331e549fb74ff76b053778eb26864a40012d4"
+                "reference": "e73d5c7808ebd85b8baf1e839aa598dd1351563a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/RehatBundle/zipball/ad3331e549fb74ff76b053778eb26864a40012d4",
-                "reference": "ad3331e549fb74ff76b053778eb26864a40012d4",
+                "url": "https://api.github.com/repos/SymfonyId/RehatBundle/zipball/e73d5c7808ebd85b8baf1e839aa598dd1351563a",
+                "reference": "e73d5c7808ebd85b8baf1e839aa598dd1351563a",
                 "shasum": ""
             },
             "require": {
@@ -2656,7 +2656,6 @@
                 "symfony/monolog-bundle": "^2.8",
                 "symfony/swiftmailer-bundle": "^2.3",
                 "symfony/symfony": "3.0.*",
-                "symfonyid/core-bundle": "dev-master",
                 "symfonyid/symfony-bundle-plugins": "dev-master",
                 "willdurand/hateoas-bundle": "dev-master"
             },
@@ -2697,7 +2696,7 @@
                 "symfony admin",
                 "symfony3"
             ],
-            "time": "2016-03-04 03:37:34"
+            "time": "2016-03-04 14:23:09"
         },
         {
             "name": "symfonyid/symfony-bundle-plugins",

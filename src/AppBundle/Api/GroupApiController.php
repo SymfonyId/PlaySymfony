@@ -2,58 +2,21 @@
 
 namespace AppBundle\Api;
 
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
+use FOS\RestBundle\Controller\FOSRestController;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use Symfonian\Indonesia\RehatBundle\Controller\RehatController;
-use Symfony\Component\HttpFoundation\Request;
+use Symfonian\Indonesia\RehatBundle\Annotation\Crud;
+use Symfonian\Indonesia\RehatBundle\Controller\RehatControllerTrait;
 
 /**
  * @Route("/groups")
+ * @Crud("AppBundle\Entity\Group", form="AppBundle\Form\GroupType")
  */
-class GroupApiController extends RehatController
+class GroupApiController extends FOSRestController
 {
-    /**
-     * @Route("/", defaults={"_entity": "AppBundle\Entity\Group"})
-     * @Method({"GET"})
-     */
-    public function listAction(Request $request)
-    {
-        return parent::listAction($request);
-    }
+    use RehatControllerTrait;
 
-    /**
-     * @Route("/new", defaults={"_entity": "AppBundle\Entity\Group", "_form": "AppBundle\Form\GroupType"})
-     * @Method({"POST"})
-     */
-    public function createAction(Request $request)
+    public function getContainer()
     {
-        return parent::createAction($request);
-    }
-
-    /**
-     * @Route("/{id}", defaults={"_entity": "AppBundle\Entity\Group"})
-     * @Method({"GET"})
-     */
-    public function getAction(Request $request, $id)
-    {
-        return parent::getAction($request, $id);
-    }
-
-    /**
-     * @Route("/{id}", defaults={"_entity": "AppBundle\Entity\Group", "_form": "AppBundle\Form\GroupType"})
-     * @Method({"PUT"})
-     */
-    public function updateAction(Request $request, $id)
-    {
-        return parent::updateAction($request, $id);
-    }
-
-    /**
-     * @Route("/{id}", defaults={"_entity": "AppBundle\Entity\Group", "_form": "AppBundle\Form\GroupType"})
-     * @Method({"DELETE"})
-     */
-    public function deleteAction(Request $request, $id)
-    {
-        return parent::deleteAction($request, $id);
+        return $this->container;
     }
 }
