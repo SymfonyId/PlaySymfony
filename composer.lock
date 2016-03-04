@@ -779,12 +779,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "e90e98afa45f8dd0d893e7cd4f07b31cc92325eb"
+                "reference": "40c2044c880f733ec493e87a5b0c48a40f4feb64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/e90e98afa45f8dd0d893e7cd4f07b31cc92325eb",
-                "reference": "e90e98afa45f8dd0d893e7cd4f07b31cc92325eb",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/40c2044c880f733ec493e87a5b0c48a40f4feb64",
+                "reference": "40c2044c880f733ec493e87a5b0c48a40f4feb64",
                 "shasum": ""
             },
             "require": {
@@ -855,7 +855,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2016-03-04 12:49:38"
+            "time": "2016-03-04 16:30:47"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -2633,12 +2633,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/RehatBundle.git",
-                "reference": "e73d5c7808ebd85b8baf1e839aa598dd1351563a"
+                "reference": "1ac27589505e4c90b35e8e329959a877aad7aa36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/RehatBundle/zipball/e73d5c7808ebd85b8baf1e839aa598dd1351563a",
-                "reference": "e73d5c7808ebd85b8baf1e839aa598dd1351563a",
+                "url": "https://api.github.com/repos/SymfonyId/RehatBundle/zipball/1ac27589505e4c90b35e8e329959a877aad7aa36",
+                "reference": "1ac27589505e4c90b35e8e329959a877aad7aa36",
                 "shasum": ""
             },
             "require": {
@@ -2696,7 +2696,7 @@
                 "symfony admin",
                 "symfony3"
             ],
-            "time": "2016-03-04 14:23:09"
+            "time": "2016-03-04 16:37:19"
         },
         {
             "name": "symfonyid/symfony-bundle-plugins",

@@ -14,9 +14,4 @@ use Symfonian\Indonesia\RehatBundle\Controller\RehatControllerTrait;
 class GroupApiController extends FOSRestController
 {
     use RehatControllerTrait;
-
-    public function getContainer()
-    {
-        return $this->container;
-    }
 }
