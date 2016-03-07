@@ -3,12 +3,18 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Hateoas\Configuration\Annotation as Hateoas;
+use Symfonian\Indonesia\RehatBundle\Annotation\Filter;
+use Symfonian\Indonesia\RehatBundle\Annotation\Sortable;
+use Symfonian\Indonesia\RehatBundle\Model\EntityInterface;
 
 /**
  * @ORM\Table(name="pl_contact")
  * @ORM\Entity
+ * @Hateoas\Relation("self", href = "expr('/api/contacts/' ~ object.getId())")
+ * @Hateoas\Relation("group", href = "expr('/api/groups/' ~ object.getGroup().getId())")
  */
-class Contact
+class Contact implements EntityInterface
 {
     /**
      * @ORM\Column(name="id", type="integer", nullable=false)
@@ -20,21 +26,29 @@ class Contact
     /**
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Group", cascade={"persist"})
      * @ORM\JoinColumn(name="group_id", referencedColumnName="id")
+     * @Filter()
+     * @Sortable()
      */
     private $group;
 
     /**
      * @ORM\Column(name="name", type="string", length=77)
+     * @Filter()
+     * @Sortable()
      */
     private $fullName;
 
     /**
      * @ORM\Column(name="email", type="string", length=77)
+     * @Filter()
+     * @Sortable()
      */
     private $email;
 
     /**
      * @ORM\Column(name="phone_number", type="string", length=17)
+     * @Filter()
+     * @Sortable()
      */
     private $phoneNumber;
 
