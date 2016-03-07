@@ -3,8 +3,9 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use JMS\Serializer\Annotation as Serializer;
+use Hateoas\Configuration as HateoasConfig;
 use Hateoas\Configuration\Annotation as Hateoas;
+use JMS\Serializer\Annotation as Serializer;
 use Symfonian\Indonesia\RehatBundle\Annotation\Filter;
 use Symfonian\Indonesia\RehatBundle\Annotation\Sortable;
 use Symfonian\Indonesia\RehatBundle\Model\EntityInterface;
