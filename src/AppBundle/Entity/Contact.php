@@ -41,7 +41,7 @@ class Contact implements EntityInterface
 
     /**
      * @ORM\Column(name="email", type="string", length=77)
-     * @Email()
+     * @Email(message="email_not_valid")
      * @Filter()
      * @Sortable()
      */
