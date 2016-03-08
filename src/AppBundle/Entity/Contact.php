@@ -7,6 +7,7 @@ use Hateoas\Configuration\Annotation as Hateoas;
 use Symfonian\Indonesia\RehatBundle\Annotation\Filter;
 use Symfonian\Indonesia\RehatBundle\Annotation\Sortable;
 use Symfonian\Indonesia\RehatBundle\Model\EntityInterface;
+use Symfony\Component\Validator\Constraints\Email;
 
 /**
  * @ORM\Table(name="pl_contact")
@@ -40,6 +41,7 @@ class Contact implements EntityInterface
 
     /**
      * @ORM\Column(name="email", type="string", length=77)
+     * @Email()
      * @Filter()
      * @Sortable()
      */

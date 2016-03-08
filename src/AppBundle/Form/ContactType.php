@@ -19,13 +19,13 @@ class ContactType extends AbstractType
                 'choice_label' => 'name',
                 'label' => 'Group',
             ))
-            ->add('fullName', TextType::class, array(
+            ->add('full_name', TextType::class, array(
                 'label' => 'Nama Lengkap',
             ))
             ->add('email', TextType::class, array(
                 'label' => 'Email',
             ))
-            ->add('phoneNumber', TextType::class, array(
+            ->add('phone_number', TextType::class, array(
                 'label' => 'Phone Number',
             ))
             ->add('save', SubmitType::class, array(
@@ -38,6 +38,7 @@ class ContactType extends AbstractType
     {
         $resolver->setDefaults(array(
             'data_class' => 'AppBundle\Entity\Contact',
+            'csrf_protection' => false,
         ));
     }
 }
