@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "964e8c34832f5e5ea20ed47b5bd8c6ed",
-    "content-hash": "06986b00d1d1d7582d57ac91a6f64af5",
+    "hash": "015164f2ddca351fed0c0ff5eda6f045",
+    "content-hash": "f6fe044a6aa6064488d47fac84c614e6",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -779,27 +779,31 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "40c2044c880f733ec493e87a5b0c48a40f4feb64"
+                "reference": "4abeb4226c5e2204a655d10adefc31275df08a37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/40c2044c880f733ec493e87a5b0c48a40f4feb64",
-                "reference": "40c2044c880f733ec493e87a5b0c48a40f4feb64",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/4abeb4226c5e2204a655d10adefc31275df08a37",
+                "reference": "4abeb4226c5e2204a655d10adefc31275df08a37",
                 "shasum": ""
             },
             "require": {
                 "doctrine/inflector": "^1.0",
                 "php": "^5.5.9|~7.0",
                 "psr/log": "^1.0",
+                "symfony/finder": "^2.7|^3.0",
                 "symfony/framework-bundle": "^2.7|^3.0",
                 "symfony/routing": "^2.7|^3.0",
                 "willdurand/jsonp-callback-validator": "^1.0",
                 "willdurand/negotiation": "^2.0"
             },
+            "conflict": {
+                "sensio/framework-extra-bundle": "<3.0.13"
+            },
             "require-dev": {
                 "jms/serializer-bundle": "^1.0",
                 "phpoption/phpoption": "^1.1",
-                "sensio/framework-extra-bundle": "^3.0",
+                "sensio/framework-extra-bundle": "^3.0.13",
                 "sllh/php-cs-fixer-styleci-bridge": "^1.3",
                 "symfony/browser-kit": "^2.7|^3.0",
                 "symfony/css-selector": "^2.7|^3.0",
@@ -855,7 +859,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2016-03-04 16:30:47"
+            "time": "2016-03-07 17:46:43"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -2633,12 +2637,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/RehatBundle.git",
-                "reference": "1ac27589505e4c90b35e8e329959a877aad7aa36"
+                "reference": "eef6a919fd34b234cc58157596cca8e2178620f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/RehatBundle/zipball/1ac27589505e4c90b35e8e329959a877aad7aa36",
-                "reference": "1ac27589505e4c90b35e8e329959a877aad7aa36",
+                "url": "https://api.github.com/repos/SymfonyId/RehatBundle/zipball/eef6a919fd34b234cc58157596cca8e2178620f5",
+                "reference": "eef6a919fd34b234cc58157596cca8e2178620f5",
                 "shasum": ""
             },
             "require": {
@@ -2647,7 +2651,6 @@
                 "doctrine/orm": "^2.5",
                 "friendsofsymfony/rest-bundle": "dev-master",
                 "jms/serializer-bundle": "dev-master",
-                "nelmio/api-doc-bundle": "~2.9",
                 "pagerfanta/pagerfanta": "dev-master",
                 "php": ">=5.5.9",
                 "sensio/distribution-bundle": "^5.0",
@@ -2656,7 +2659,6 @@
                 "symfony/monolog-bundle": "^2.8",
                 "symfony/swiftmailer-bundle": "^2.3",
                 "symfony/symfony": "3.0.*",
-                "symfonyid/symfony-bundle-plugins": "dev-master",
                 "willdurand/hateoas-bundle": "dev-master"
             },
             "require-dev": {
@@ -2696,7 +2698,7 @@
                 "symfony admin",
                 "symfony3"
             ],
-            "time": "2016-03-04 16:37:19"
+            "time": "2016-03-08 04:35:45"
         },
         {
             "name": "symfonyid/symfony-bundle-plugins",

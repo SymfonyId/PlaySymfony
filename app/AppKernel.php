@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             new FOS\RestBundle\FOSRestBundle(),
             new Bazinga\Bundle\HateoasBundle\BazingaHateoasBundle(),
 //            new Symfonian\Indonesia\CoreBundle\SymfonianIndonesiaCoreBundle(),
+            new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
             new Symfonian\Indonesia\RehatBundle\SymfonianIndonesiaRehatBundle(),
             new AppBundle\AppBundle(),
         ];
