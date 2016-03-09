@@ -54,4 +54,21 @@ class ContactApiController extends RehatController
     {
         return $this->post($request, $this->getForm(ContactType::class), new Contact());
     }
+
+    /**
+     * Get contacts edit form
+     *
+     * @Route("/{id}/edit")
+     * @Method({"GET"})
+     *
+     * @ApiDoc(
+     *     section="Master",
+     *     resource="Contact",
+     *     description="Get contact form to use for ajax"
+     * )
+     */
+    public function editAction($id)
+    {
+        return $this->edit($this->getForm(ContactType::class), $id, Contact::class);
+    }
 }
